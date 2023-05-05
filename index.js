@@ -5,7 +5,7 @@ const port = process.env.PORT || 5000;
 
 app.use(cors());
 const master_chef = require("./chef.json");
-const chef_food = require("./Recipe.json");
+const chef_food = require("./recipe.json");
 
 app.get("/", (req, res) => {
   res.send("Hello Italian all chef ");
